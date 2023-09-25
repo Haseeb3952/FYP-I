@@ -42,7 +42,6 @@ body {
 .gray-circle {
   border: 3px solid #aac1ce;
   position: absolute;
-  bottom: 0;
   height: 20px;
   width: 20px;
   background-color: white;
@@ -69,16 +68,6 @@ body {
   width: 80px;
   left: 700px;
   bottom: 180px;
-  border-radius: 50%;
-}
-
-.dotted-circle-icon {
-  position: absolute;
-  bottom: 0;
-  height: 80px;
-  width: 80px;
-  left: 500px;
-  bottom: 380px;
   border-radius: 50%;
 }
 
@@ -136,10 +125,19 @@ body {
   width: 70%;
 }
 
-
 .btn-presentation {
-  background: rgb(238,174,202);
-background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 80, 255, 1) 0%,
+    rgba(153, 80, 255, 1) 35%,
+    rgba(90, 94, 255, 1) 100%
+  );
+}
+
+.stars img {
+  height: 30px;
+  width: 30px;
 }
 
 /* // Small devices (landscape phones, less than 768px) */
@@ -152,22 +150,14 @@ background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 
   }
   .setting-icon {
     left: 340px;
-    bottom: 300px;
-  }
-
-  .dotted-circle-icon {
-    left: 290px;
-    bottom: 650px;
+    bottom: 500px;
   }
   .red-circle {
-    border: 3px solid red;
-    position: absolute;
-    bottom: 0;
-    height: 20px;
-    width: 20px;
-    background-color: white;
     left: 15px;
     bottom: 650px;
-    border-radius: 50%;
+  }
+  .gray-circle {
+    left: 300px;
+    bottom: 690px;
   }
 }
