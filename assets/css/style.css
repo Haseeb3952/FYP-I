@@ -185,12 +185,22 @@ h1 {
 .number-circle {
   border: 1px solid #913bff;
   border-radius: 50%;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
+  transition: 0.3s;
+}
+.card:hover .number-circle {
+  background-color: #913bff;
+  color: #ffffff;
 }
 
 .card {
   box-shadow: -20px 20px 50px rgba(0,40,99,.05);
+}
+
+.number-card {
+  display: grid;
+  grid-template-columns: 70px auto;
 }
 
 /* // Small devices (landscape phones, less than 768px) */
