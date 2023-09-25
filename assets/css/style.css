@@ -39,6 +39,29 @@ body {
   width: 600px;
 }
 
+.red-circle {
+  border: 3px solid red;
+  position: absolute;
+  bottom: 0;
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  left: 100px;
+  bottom: 70px;
+  border-radius: 50%;
+}
+
+.setting-icon {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  left: 700px;
+  bottom: 180px;
+  border-radius: 50%;
+}
+
+
 .hero-heading {
   z-index: 999;
 }
@@ -103,16 +126,6 @@ body {
     display: none;
   }
   .large-circle {
-    position: absolute;
-    height: 400px;
-    width: 400px;
-    background-color: transparent;
-    right: 0;
-    border-radius: 50%;
-    margin-right: -150px;
-    margin-top: 150px;
-    box-shadow: rgba(222, 222, 222, 0.2) 0px 8px 24px;
-    /* z-index: -10; */
-    overflow-x: hidden;
+   display: none;
   }
  }
