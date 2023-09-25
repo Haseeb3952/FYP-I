@@ -1,0 +1,118 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+
+.hero {
+  background-color: #f7fdff;
+  height: 100vh;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  border-radius: 50%;
+  margin-top: -70px;
+  margin-left: -70px;
+  box-shadow: rgba(168, 174, 180, 0.2) 0px 8px 24px;
+}
+
+.large-circle {
+  position: absolute;
+  height: 700px;
+  width: 700px;
+  background-color: white;
+  right: 0;
+  border-radius: 50%;
+  margin-right: -150px;
+  margin-top: -150px;
+  box-shadow: rgba(222, 222, 222, 0.2) 0px 8px 24px;
+}
+
+.large-circle img {
+  padding-top: 200px;
+  height: 600px;
+  width: 600px;
+}
+
+.hero-heading {
+  z-index: 999;
+}
+
+.navbar-brand img {
+  height: 70px;
+  width: 70px;
+}
+
+/* Custom styles for underline effect on hover */
+.navbar-nav .nav-item {
+  position: relative;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  color: #913BFF !important;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #913BFF; /* Color of the underline */
+  transition: width 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+  width: 100%;
+}
+
+.generator-heading {
+  color: #913BFF;
+  text-decoration: underline;
+}
+
+.search-icon img {
+  height: 20px;
+  width: 20px;
+}
+
+.search-here input {
+  width: 100%;
+}
+
+.input-border {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+  width: 70%;
+}
+.input-border:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
+  border-color: #86b7fe;
+}
+
+/* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+  .large-circle img {
+    display: none;
+  }
+  .large-circle {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: transparent;
+    right: 0;
+    border-radius: 50%;
+    margin-right: -150px;
+    margin-top: 150px;
+    box-shadow: rgba(222, 222, 222, 0.2) 0px 8px 24px;
+    /* z-index: -10; */
+    overflow-x: hidden;
+  }
+ }
