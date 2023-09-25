@@ -156,10 +156,9 @@ h1 {
   background-color: #f7fdff;
 }
 
-.title {
+.work-title {
   background-color: #f7f1ff;
   color: #913bff;
-  width: 15%;
   letter-spacing: 1px;
 }
 .client-title {
@@ -211,38 +210,26 @@ h1 {
     display: none;
   }
   .setting-icon {
-    left: 340px;
-    bottom: 500px;
+    left: 300px;
+    bottom: 300px;
   }
   .red-circle {
     left: 15px;
-    bottom: 650px;
+    bottom: 250px;
   }
   .gray-circle {
     left: 300px;
-    bottom: 690px;
+    bottom: 390px;
   }
   .services-circle {
-    height: 400px;
-    width: 400px;
-    margin-left: 0px;
+    height: 330px;
+    width: 330px;
   }
 
   .services-circle img {
     height: 300px;
     width: 300px;
   }
-  .client-title {
-    background-color: #f7f1ff;
-    color: #913bff;
-    width: 48%;
-    letter-spacing: 1px;
-  }
-  .title {
-    background-color: #f7f1ff;
-    color: #913bff;
-    width: 43%;
-    letter-spacing: 1px;
-  }
+
 
 }
