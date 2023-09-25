@@ -39,15 +39,26 @@ body {
   width: 600px;
 }
 
-.red-circle {
-  border: 3px solid red;
+.gray-circle {
+  border: 3px solid #aac1ce;
   position: absolute;
   bottom: 0;
   height: 20px;
   width: 20px;
   background-color: white;
+  left: 300px;
+  bottom: 80px;
+  border-radius: 50%;
+}
+
+.red-circle {
+  border: 3px solid red;
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background-color: white;
   left: 100px;
-  bottom: 70px;
+  bottom: 60px;
   border-radius: 50%;
 }
 
@@ -61,6 +72,15 @@ body {
   border-radius: 50%;
 }
 
+.dotted-circle-icon {
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+  width: 80px;
+  left: 500px;
+  bottom: 380px;
+  border-radius: 50%;
+}
 
 .hero-heading {
   z-index: 999;
@@ -78,7 +98,7 @@ body {
 }
 
 .nav-link:hover {
-  color: #913BFF !important;
+  color: #913bff !important;
 }
 
 .navbar-nav .nav-link::before {
@@ -88,7 +108,7 @@ body {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #913BFF; /* Color of the underline */
+  background-color: #913bff; /* Color of the underline */
   transition: width 0.3s ease-in-out;
 }
 
@@ -97,7 +117,7 @@ body {
 }
 
 .generator-heading {
-  color: #913BFF;
+  color: #913bff;
   text-decoration: underline;
 }
 
@@ -115,17 +135,39 @@ body {
   border-radius: 5px;
   width: 70%;
 }
-.input-border:focus {
-  box-shadow: 0 0 0 0.25rem rgba(13,110,253,.25);
-  border-color: #86b7fe;
+
+
+.btn-presentation {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
 
 /* // Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { 
+@media (max-width: 767.98px) {
   .large-circle img {
     display: none;
   }
   .large-circle {
-   display: none;
+    display: none;
   }
- }
+  .setting-icon {
+    left: 330px;
+    bottom: 380px;
+  }
+
+  .dotted-circle-icon {
+    left: 290px;
+    bottom: 650px;
+  }
+  .red-circle {
+    border: 3px solid red;
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    left: 15px;
+    bottom: 650px;
+    border-radius: 50%;
+  }
+}
