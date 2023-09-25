@@ -193,7 +193,7 @@ h1 {
 }
 
 .card {
-  box-shadow: -20px 20px 50px rgba(0,40,99,.05);
+  box-shadow: -20px 20px 50px rgba(0, 40, 99, 0.05);
 }
 
 .number-card {
@@ -203,6 +203,9 @@ h1 {
 
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  .hero {
+    height: 85vh;
+  }
   .large-circle img {
     display: none;
   }
@@ -230,6 +233,4 @@ h1 {
     height: 300px;
     width: 300px;
   }
-
-
 }
