@@ -1,9 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
 body {
   margin: 0%;
   padding: 0%;
+  font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
-
+h1 {
+  font-family: "Mooli", sans-serif;
+  font-weight: 900;
+}
 .hero {
   background-color: #f7fdff;
   height: 100vh;
@@ -68,6 +76,10 @@ body {
   width: 80px;
   left: 700px;
   bottom: 180px;
+  border-radius: 50%;
+}
+
+.setting-icon img {
   border-radius: 50%;
 }
 
@@ -140,6 +152,47 @@ body {
   width: 30px;
 }
 
+.bg-light-blue {
+  background-color: #f7fdff;
+}
+
+.title {
+  background-color: #f7f1ff;
+  color: #913bff;
+  width: 15%;
+  letter-spacing: 1px;
+}
+.client-title {
+  background-color: #f7f1ff;
+  color: #913bff;
+  width: 42%;
+  letter-spacing: 1px;
+}
+
+.services-circle {
+  height: 700px;
+  width: 700px;
+  border-radius: 50%;
+  margin-left: -50px;
+  box-shadow: rgba(225, 225, 225, 0.2) 0px 8px 24px;
+}
+
+.services-circle img {
+  height: 550px;
+  width: 550px;
+}
+
+.number-circle {
+  border: 1px solid #913bff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.card {
+  box-shadow: -20px 20px 50px rgba(0,40,99,.05);
+}
+
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .large-circle img {
@@ -160,4 +213,27 @@ body {
     left: 300px;
     bottom: 690px;
   }
+  .services-circle {
+    height: 400px;
+    width: 400px;
+    margin-left: 0px;
+  }
+
+  .services-circle img {
+    height: 300px;
+    width: 300px;
+  }
+  .client-title {
+    background-color: #f7f1ff;
+    color: #913bff;
+    width: 48%;
+    letter-spacing: 1px;
+  }
+  .title {
+    background-color: #f7f1ff;
+    color: #913bff;
+    width: 43%;
+    letter-spacing: 1px;
+  }
+
 }

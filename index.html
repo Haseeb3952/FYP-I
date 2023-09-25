@@ -1,156 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!----------------------------------------- Font Awesome CDN --------------------------------------->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+  <!----------------------------------------- Font Awesome CDN --------------------------------------->
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-    <title>SlideEase - Ai Slide Generator</title>
-  </head>
+  <!------------------------------------------- Box icons CDN --------------------------------------->
 
-  <body>
-    <!--------------------------------------- Navbar Section Started ------------------------------------->
-    <section class="hero">
-      <div class="circle"></div>
-      <div class="large-circle">
-        <img src="/assets/images/Chat bot-amico.svg" class="img-fluid" alt="" />
-      </div>
-      <div class="red-circle"></div>
-      <div class="gray-circle"></div>
-      <div class="setting-icon">
-        <img src="/assets/images/setting.gif" class="img-fluid" alt="" />
-      </div>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="/assets/images/logo-r.png" class="" alt="" />
-            </a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link active px-4" aria-current="page" href="#"
-                    >Home</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active px-4" aria-current="page" href="#"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active px-4" aria-current="page" href="#"
-                    >How it works</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active px-4" aria-current="page" href="#"
-                    >Contact</a
-                  >
-                </li>
-              </ul>
-            </div>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+
+  <title>SlideEase - Ai Slide Generator</title>
+</head>
+
+<body>
+  <!--------------------------------------- Navbar Section Started ------------------------------------->
+  <section class="hero">
+    <div class="circle"></div>
+    <div class="large-circle">
+      <img src="/assets/images/Chat bot-amico.svg" class="img-fluid" alt="" />
+    </div>
+    <div class="red-circle"></div>
+    <div class="gray-circle"></div>
+    <div class="setting-icon">
+      <img src="/assets/images/setting.gif" class="img-fluid" alt="" />
+    </div>
+
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/images/logo-r.png" class="" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#">Service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#">How it works</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active px-4" aria-current="page" href="#">Contact</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
-      <div class="container px-md-0 px-5">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <div class="pt-md-3 pt-5">
-              <h1>Power Point Slides</h1>
-              <h1 class="generator-heading">Generator</h1>
-              <p class="text-muted fs-5 py-md-2 py-2 mb-0">
-                Sinco delivered blazing fast, striking ai solution lorem quis
-                data user learning analysis.
-              </p>
-              <h1>
-                Type Your
-                <span class="generator-heading"> Presentation </span> Title
-                here...
-              </h1>
-              <div
-                class="me-md-5 me-0 border border-1 border-input rounded rounded-3"
-              >
-                <div class="input-group">
-                  <input
-                    type="text"
-                    class="form-control border-0 py-3"
-                    placeholder="Example: React, Vue, Laravel, etc."
-                    aria-label="Dollar amount (with dot and two decimal places)"
-                  />
+        </div>
+      </nav>
+    </div>
+
+    <!------------------------------------------ Navbar Section Ended ------------------------------------>
+
+    <!------------------------------------------ Hero Section Started ------------------------------------>
+
+    <div class="container px-md-0 px-5">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="pt-md-3 pt-5">
+            <h1>Power Point Slides</h1>
+            <h1 class="generator-heading">Generator</h1>
+            <p class="text-muted fs-5 py-md-2 py-2 mb-0">
+              Sinco delivered blazing fast, striking ai solution lorem quis
+              data user learning analysis.
+            </p>
+            <h1 class="lh-base">
+              Type Your
+              <span class="generator-heading"> Presentation </span> Title
+              here...
+            </h1>
+            <div class="me-md-5 me-0 border border-1 border-input rounded rounded-3">
+              <div class="input-group">
+                <input type="text" class="form-control border-0 py-3" placeholder="Example: React, Vue, Laravel, etc."
+                  aria-label="Dollar amount (with dot and two decimal places)" />
+              </div>
+            </div>
+            <div class="d-flex align-items-center justify-content-end my-2">
+              <div>
+                <div class="stars">
+                  <img src="/assets/images/stars.png" class="img-fluid" alt="" />
                 </div>
               </div>
-              <div class="d-flex align-items-center justify-content-end my-2">
-                <div>
-                  <div class="stars">
-                    <img
-                      src="/assets/images/stars.png"
-                      class="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div>
-                  <button
-                    class="btn-presentation text-white border-0 px-3 py-2 rounded rounded-3"
-                  >
-                    Generate my Presentation
-                  </button>
-                </div>
+              <div>
+                <button class="btn-presentation text-white border-0 px-3 py-2 rounded rounded-3">
+                  Generate my Presentation
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-0 col-md-6"></div>
       </div>
-    </section>
+      <div class="col-0 col-md-6"></div>
+    </div>
+  </section>
 
-    <!------------------------------------------ Navbar Section Ended ------------------------------------>
+  <!------------------------------------------ Hero Section Ended ------------------------------------>
 
-    <script src="/assets/script/myScript.js"></script>
+  <!--------------------------------------- Services Section Started --------------------------------->
 
-    <!-- Optional JavaScript; choose one of the two! -->
+  <section>
+    <div class="container">
+      <div class="row d-flex align-items-center py-5">
+        <div class="col-12 col-md-6">
+          <h1 class="lh-base">
+            <span class="generator-heading"> Services </span> We Provide
+            <br />
+            with Quality.
+          </h1>
+        </div>
+        <div class="col-12 col-md-6">
+          <p class="text-muted fs-5">
+            NLP entails applying algorithms to identify and extract rules such
+            that the unstructured language data is converted.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-12 col-md-7">
+          <div class="services-circle d-flex justify-content-center align-items-center">
+            <img src="/assets/images/services.jpg" class="img-fluid" alt="" />
+          </div>
+        </div>
+        <div class="col-12 col-md-5">
+          
+          <div class="pt-md-0 pt-5">
+            <div class="client-title px-3 rounded rounded-pill py-1 text-uppercase">
+              Over 150+ Client
+            </div>
+            <h1 class="lh-base py-2">
+              Target <span class="generator-heading">Audience</span> for your
+              business.
+            </h1>
+            <p class="text-muted fs-5 py-2">
+              AI technology is perfect for best business solutions & we offer
+              help to achieve your goals.
+            </p>
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <i class="bx bx-check fs-3"></i>
+              </div>
+              <div>
+                <h5 class="m-0 text-muted">Various analysis options.</h6>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <i class="bx bx-check fs-3"></i>
+              </div>
+              <div>
+                <h5 class="m-0 text-muted">Page Load (time, size, number of requests).</h5>
+              </div>
+            </div>
+            <div class="d-flex align-items-center gap-3">
+              <div>
+                <i class="bx bx-check fs-3"></i>
+              </div>
+              <div>
+                <h5 class="m-0 text-muted">Various analysis options.</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!---------------------------------------- Services Section Ended ---------------------------------->
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!------------------------------------- How it Works Section Started ------------------------------->
+
+  <section class="py-5">
+    <div class="container">
+      <div class="title px-3 rounded rounded-pill py-1 text-uppercase">
+        Work Process
+      </div>
+      <h1 class="py-2 lh-base">How <span class="generator-heading">SlideEase</span> process <br> & works.</h1>
+    
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <div class="card p-4  border border-0">
+            <div class="d-flex gap-4">
+              <div class="number-circle p-3">
+                <p class="d-flex justify-content-center align-items-center m-0">1</p>
+              </div>
+              <div>
+                <h5 class="fw-bold">Frame the Problem</h5>
+                <p class="text-muted">Learn content by interacting with an expert lesson or watching a video.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card p-4  border border-0 my-3">
+            <div class="d-flex gap-4">
+              <div class="number-circle p-3">
+                <p class="d-flex justify-content-center align-items-center m-0">2</p>
+              </div>
+              <div>
+                <h5 class="fw-bold">Frame the Problem</h5>
+                <p class="text-muted">Learn content by interacting with an expert lesson or watching a video.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card p-4  border border-0">
+            <div class="d-flex gap-4">
+              <div class="number-circle p-3">
+                <p class="d-flex justify-content-center align-items-center m-0">3</p>
+              </div>
+              <div>
+                <h5 class="fw-bold">Frame the Problem</h5>
+                <p class="text-muted">Learn content by interacting with an expert lesson or watching a video.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  </section>
+
+  <!-------------------------------------- How it Works Section Ended -------------------------------->
+
+  <script src="/assets/script/myScript.js"></script>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     -->
-  </body>
+</body>
+
 </html>
