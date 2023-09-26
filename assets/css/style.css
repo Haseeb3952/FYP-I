@@ -164,7 +164,6 @@ h1 {
 .client-title {
   background-color: #f7f1ff;
   color: #913bff;
-  width: 42%;
   letter-spacing: 1px;
 }
 
@@ -214,6 +213,53 @@ h1 {
   box-shadow: rgba(225, 225, 225, 0.2) 0px 8px 24px;
 }
 
+.large-heading {
+  font-size: 60px;
+}
+
+.solution-section {
+  border-radius: 20px;
+  background-color: #913bff;
+}
+
+.testimonials {
+  background-color: #f7f1ff;
+  color: #913bff;
+  letter-spacing: 1px;
+}
+
+.bg-light-blue {
+  background-color: #f7fdff;
+  padding: 100px 0px;
+}
+
+.quote {
+  height: 50px;
+  width: 50px;
+}
+
+.client-testimonials {
+  background-color: white;
+  box-shadow: rgba(225, 225, 225, 0.2) 0px 8px 24px;
+  border-radius: 40px;
+}
+
+.testimonial-content {
+  line-height: 3rem;
+}
+
+.faq {
+  padding: 100px 0px;
+}
+
+.btn-contact {
+  background-color: #913bff;
+}
+
+.accordion-item {
+  box-shadow: rgba(195, 196, 197, 0.2) 0px 8px 24px;
+}
+
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .hero {
@@ -255,5 +301,12 @@ h1 {
   .work-circle img {
     height: 329px;
     width: 329px;
+  }
+  .testimonial-content {
+    line-height: 1.5rem;
+    font-size: 15px;
+  }
+  .large-heading {
+    font-size: 40px;
   }
 }
