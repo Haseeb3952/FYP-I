@@ -260,6 +260,45 @@ h1 {
   box-shadow: rgba(195, 196, 197, 0.2) 0px 8px 24px;
 }
 
+.sponsers {
+  box-shadow: rgba(195, 196, 197, 0.2) 0px 8px 24px;
+  /* box-shadow: 0 25px 60px rgba(0,106,204,.05); */
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.sponsers:hover {
+  transform: scaleY(5px);
+}
+.google img {
+  height: 60px;
+  width: 170px;
+  object-fit: contain;
+}
+
+.chat-gpt img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.logo-ai img {
+  height: 60px;
+  width: 170px;
+  object-fit: contain;
+}
+
+.figma img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
+
+.unsplash img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+}
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .hero {
@@ -308,5 +347,11 @@ h1 {
   }
   .large-heading {
     font-size: 40px;
+  }
+  .bg-light-blue {
+    padding: 50px 0px;
+  }
+  .faq {
+    padding: 50px 0px;
   }
 }
