@@ -169,6 +169,7 @@ h1 {
   width: 50%;
 }
 
+
 .services-circle {
   height: 700px;
   width: 700px;
@@ -228,7 +229,7 @@ h1 {
   background-color: #f7f1ff;
   color: #913bff;
   letter-spacing: 1px;
-  width: 20%;
+  width: 45%;
 }
 
 .bg-light-blue {
@@ -271,7 +272,7 @@ h1 {
 }
 
 .sponsers:hover {
-  transform: scale(1.1); 
+  margin-top: -7px;
 }
 .google img {
   height: 60px;
@@ -302,6 +303,37 @@ h1 {
   width: 60px;
   object-fit: contain;
 }
+
+.btn-subscribe {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background-color: #913bff;
+  transition: 0.4s;
+}
+
+.btn-subscribe:hover {
+  background-color: #aac1ce;
+}
+
+.footer-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+.social {
+  background-color: #EDF3FB;
+  transition: 0.4s;
+}
+.social i {
+  color: #3b668d;
+}
+
+.social:hover {
+  background-color: #738BAE;
+}
+
+.social:hover i {
+  color: #ffffff;
+}
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .hero {
@@ -319,7 +351,7 @@ h1 {
   }
   .red-circle {
     left: 15px;
-    bottom: 190px;
+    bottom: 100px;
   }
   .gray-circle {
     left: 300px;
@@ -351,7 +383,7 @@ h1 {
     width: 329px;
   }
   .testimonials {
-    width: 50%;
+    width: 70%;
   }
   .testimonial-content {
     line-height: 1.5rem;
