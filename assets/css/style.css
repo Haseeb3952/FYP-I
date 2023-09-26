@@ -160,11 +160,13 @@ h1 {
   background-color: #f7f1ff;
   color: #913bff;
   letter-spacing: 1px;
+  width: 35%;
 }
 .client-title {
   background-color: #f7f1ff;
   color: #913bff;
   letter-spacing: 1px;
+  width: 50%;
 }
 
 .services-circle {
@@ -226,6 +228,7 @@ h1 {
   background-color: #f7f1ff;
   color: #913bff;
   letter-spacing: 1px;
+  width: 20%;
 }
 
 .bg-light-blue {
@@ -268,7 +271,7 @@ h1 {
 }
 
 .sponsers:hover {
-  transform: scaleY(5px);
+  transform: scale(1.1); 
 }
 .google img {
   height: 60px;
@@ -326,10 +329,16 @@ h1 {
     height: 330px;
     width: 330px;
   }
+  .client-title {
+    width: 60%;
+  }
 
   .services-circle img {
     height: 300px;
     width: 300px;
+  }
+  .work-title {
+    width: 50%;
   }
   .work-circle {
     height: 330px;
@@ -340,6 +349,9 @@ h1 {
   .work-circle img {
     height: 329px;
     width: 329px;
+  }
+  .testimonials {
+    width: 50%;
   }
   .testimonial-content {
     line-height: 1.5rem;
