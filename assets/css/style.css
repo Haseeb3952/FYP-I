@@ -394,11 +394,21 @@ h1 {
     height: 330px;
     width: 330px;
     margin-top: 50px;
+
   }
 
   .work-circle img {
     height: 329px;
     width: 329px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .ai-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .testimonials {
     width: 70%;
