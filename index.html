@@ -58,7 +58,7 @@
           <a class="navbar-brand" href="#">
             <img src="/assets/images/logo-r.png" class="" alt="" />
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -69,19 +69,52 @@
                 <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link active p-0" aria-current="page" href="#">Service</a>
+                <a class="nav-link active p-0" aria-current="page" href="#service">Service</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link active p-0" aria-current="page" href="#">How it works</a>
+                <a class="nav-link active p-0" aria-current="page" href="#how-it-works">How it works</a>
               </li>
               <li class="nav-item mx-4">
-                <a class="nav-link active p-0" aria-current="page" href="#">Contact</a>
+                <a class="nav-link active p-0" aria-current="page" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
+
+    <!------------------------------------------ Navbar Section Ended ------------------------------------>
+
+    <!------------------------------------------ Navbar Section Ended ------------------------------------>
+
+    <section>
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+        <div class="offcanvas-header">
+          <div class="offcanvas-logo">
+          <a href="/">
+            <img src="/assets/images/logo-r.png" alt="">
+          </a>
+          </div>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-grid gap-4">
+            <li class="nav-item mx-4">
+              <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link active p-0" aria-current="page" href="#service">Service</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link active p-0" aria-current="page" href="#how-it-works">How it works</a>
+            </li>
+            <li class="nav-item mx-4">
+              <a class="nav-link active p-0" aria-current="page" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
     <!------------------------------------------ Navbar Section Ended ------------------------------------>
 
@@ -102,7 +135,7 @@
               <span class="generator-heading"> Presentation </span> Title
               here...
             </h1>
-            <div class="me-md-5 me-0 border border-1 border-input rounded rounded-3" data-aos="fade-up">
+            <div class="me-md-5 me-0 border border-1 border-input rounded rounded-3" data-aos="zoom-in">
               <div class="input-group">
                 <input type="text" class="form-control border-0 py-3" placeholder="Example: React, Vue, Laravel, etc."
                   aria-label="Dollar amount (with dot and two decimal places)" />
@@ -131,7 +164,7 @@
 
   <!--------------------------------------- Services Section Started --------------------------------->
 
-  <section>
+  <section id="service">
     <div class="container">
       <div class="row d-flex align-items-center py-5">
         <div class="col-12 col-md-6">
@@ -156,21 +189,21 @@
             <img src="/assets/images/services.jpg" class="" alt="" />
           </div>
         </div>
-        <div class="col-12 col-md-5" data-aos="fade-up">
+        <div class="col-12 col-md-5" data-aos="zoom-in">
 
           <div class="pt-md-0 pt-5">
             <div class="client-title text-center text-uppercase rounded rounded-pill" data-aos="zoom-in">
               <p class="py-2">Over 150K+ Clients</p>
             </div>
-            <h1 class="lh-base py-2">
+            <h1 class="lh-base py-2" data-aos="fade-up">
               Target <span class="generator-heading">Audience</span> for your
               business.
             </h1>
-            <p class="text-muted fs-5 py-2">
+            <p class="text-muted fs-5 py-2" data-aos="fade-up">
               AI technology is perfect for best business solutions & we offer
               help to achieve your goals.
             </p>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-3" data-aos="fade-up">
               <div>
                 <i class="bx bx-check fs-3"></i>
               </div>
@@ -178,7 +211,7 @@
                 <h5 class="m-0 text-muted">Various analysis options.</h6>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-3 py-3" data-aos="fade-up">
               <div>
                 <i class="bx bx-check fs-3"></i>
               </div>
@@ -186,7 +219,7 @@
                 <h5 class="m-0 text-muted">Page Load (time, size, number of requests).</h5>
               </div>
             </div>
-            <div class="d-flex align-items-center gap-3">
+            <div class="d-flex align-items-center gap-3" data-aos="fade-up">
               <div>
                 <i class="bx bx-check fs-3"></i>
               </div>
@@ -204,7 +237,7 @@
 
   <!------------------------------------- How it Works Section Started ------------------------------->
 
-  <section class="py-5">
+  <section class="py-5" id="how-it-works">
     <div class="container">
 
 
@@ -476,7 +509,7 @@
 
   <!------------------------------------------ FAQ's Section Ended ----------------------------------->
 
-  <!------------------------------------------ FAQ's Section Ended ----------------------------------->
+  <!---------------------------------------- Sponsers Section Started -------------------------------->
 
   <section>
     <div class="container my-5">
@@ -521,7 +554,7 @@
     </div>
   </section>
 
-  <!------------------------------------------ FAQ's Section Ended ------------------------------------>
+  <!----------------------------------------- Sponsers Section Ended ---------------------------------->
 
   <!----------------------------------------- Footer Section Started ---------------------------------->
 
