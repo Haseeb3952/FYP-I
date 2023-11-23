@@ -8,13 +8,15 @@ body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
 }
+
 h1 {
   font-family: "Mooli", sans-serif;
   font-weight: 900;
 }
+
 .hero {
   background-color: #f7fdff;
-  height: 100vh;
+  height: 110vh;
   position: relative;
 }
 
@@ -109,7 +111,8 @@ h1 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #913bff; /* Color of the underline */
+  background-color: #913bff;
+  /* Color of the underline */
   transition: width 0.3s ease-in-out;
 }
 
@@ -164,6 +167,20 @@ h1 {
     rgba(90, 94, 255, 1) 100%
   );
 }
+.btn-presentation:hover {
+  background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.pages-dropdown {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 80, 255, 1) 0%,
+    rgba(153, 80, 255, 1) 35%,
+    rgba(90, 94, 255, 1) 100%
+  );
+}
 
 .stars img {
   height: 30px;
@@ -180,13 +197,13 @@ h1 {
   letter-spacing: 1px;
   width: 35%;
 }
+
 .client-title {
   background-color: #f7f1ff;
   color: #913bff;
   letter-spacing: 1px;
   width: 50%;
 }
-
 
 .services-circle {
   height: 700px;
@@ -207,6 +224,7 @@ h1 {
   width: 40px;
   transition: 0.3s;
 }
+
 .card:hover .number-circle {
   background-color: #913bff;
   color: #ffffff;
@@ -292,6 +310,7 @@ h1 {
 .sponsers:hover {
   margin-top: -7px;
 }
+
 .google img {
   height: 60px;
   width: 170px;
@@ -338,47 +357,103 @@ h1 {
 }
 
 .social {
-  background-color: #EDF3FB;
+  background-color: #edf3fb;
   transition: 0.4s;
 }
+
 .social i {
   color: #3b668d;
 }
 
 .social:hover {
-  background-color: #738BAE;
+  background-color: #738bae;
 }
 
 .social:hover i {
   color: #ffffff;
 }
+
+/* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+  .hero {
+    background-color: #f7fdff;
+    height: 60vh;
+    position: relative;
+  }
+  .large-circle {
+    height: 490px;
+    width: 490px;
+    margin-right: -0px;
+    margin-top: -0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .large-circle img {
+    padding-top: 0px;
+    height: 290px;
+    width: 290px;
+  }
+  .large-heading {
+    font-size: 46px;
+  }
+
+  .services-circle {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: rgba(225, 225, 225, 0.2) 0px 8px 24px;
+  }
+
+  .work-circle {
+    height: 390px;
+    width: 390px;
+    border-radius: 50%;
+    box-shadow: rgba(225, 225, 225, 0.2) 0px 8px 24px;
+  }
+
+  .work-circle img {
+    height: 390px;
+    width: 390px;
+    box-shadow: rgba(225, 225, 225, 0.2) 0px 8px 24px;
+  }
+}
+
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .hero {
     height: 80vh;
   }
+
   .large-circle img {
     display: none;
   }
+
   .large-circle {
     display: none;
   }
+
   .setting-icon {
     left: 270px;
     bottom: 270px;
   }
+
   .red-circle {
     left: 15px;
     bottom: 100px;
   }
+
   .gray-circle {
     left: 300px;
     bottom: 390px;
   }
+
   .services-circle {
     height: 330px;
     width: 330px;
   }
+
   .client-title {
     width: 60%;
   }
@@ -387,14 +462,15 @@ h1 {
     height: 300px;
     width: 300px;
   }
+
   .work-title {
     width: 50%;
   }
+
   .work-circle {
     height: 330px;
     width: 330px;
     margin-top: 50px;
-
   }
 
   .work-circle img {
@@ -410,19 +486,24 @@ h1 {
     justify-content: center;
     align-items: center;
   }
+
   .testimonials {
     width: 70%;
   }
+
   .testimonial-content {
     line-height: 1.5rem;
     font-size: 15px;
   }
-  .large-heading {
+
+  large-heading. {
     font-size: 40px;
   }
+
   .bg-light-blue {
     padding: 50px 0px;
   }
+
   .faq {
     padding: 50px 0px;
   }
