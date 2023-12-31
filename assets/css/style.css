@@ -378,6 +378,125 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
   color: #ffffff;
 }
 
+
+.plan_heading h1 {
+  font-weight: 900;
+  font-size: 33px;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.plan_heading p {
+  color: #777777;
+  font-size: 14px;
+}
+
+.pricing_plan {
+  background-color: #F9F9FF;
+  height: auto;
+  transition: 0.5s;
+}
+
+.outside_circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgba(132, 144, 255, .1);
+  padding: 40px;
+  height: 150px;
+  width: 150px;
+}
+
+.inside_circle {
+  border: 30px solid rgba(132, 144, 255, .1);
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-div {
+  display: flex;
+  justify-content: center;
+}
+
+.inside_circle h1 {
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+.plan_content h5 {
+  font-weight: 800;
+}
+
+.plan_content p {
+  color: #777777;
+  margin: 0%;
+  font-size: 13px;
+}
+
+.plan_content h2 {
+  font-weight: 800;
+}
+
+.hide {
+  display: none;
+}
+
+.hide button {
+  color: #62bdfc;
+  background-color: #fff;
+  padding: 10px 80px;
+  letter-spacing: 1px;
+}
+
+.pricing_plan:hover .hide {
+  display: block;
+}
+
+.pricing_plan:hover h2 {
+  display: none;
+}
+
+.pricing_plan:hover {
+  background: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+  transform: scale(1.03);
+  z-index: 1;
+}
+
+.pricing_plan:hover h5 {
+  color: #fff;
+}
+
+.pricing_plan:hover p {
+  color: #fff;
+}
+
+.pricing_plan:hover h2 {
+  color: #fff;
+}
+
+.pricing_plan:hover .inside_circle h1 {
+  color: #fff;
+}
+
+.pricing_plan:hover .outside_circle {
+  background-color: #99C3FE;
+}
+
+.pricing_plan:hover .inside_circle {
+  background-color: #7FB3FE;
+}
+
+.btn-buy-now:hover {
+  background-color: #00a0fa;
+  border: 1px solid #fff !important;
+}
+
+
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
   .hero {
