@@ -31,6 +31,29 @@ h1 {
   box-shadow: rgba(168, 174, 180, 0.2) 0px 8px 24px;
 }
 
+#go-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--blue-color);
+  transition: 0.4s !important;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  z-index: 99;
+}
+
+#go-top-btn i {
+  color: #fff;
+  font-size: 25px;
+}
+
 .large-circle {
   position: absolute;
   height: 700px;
@@ -620,7 +643,7 @@ background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100
     font-size: 15px;
   }
 
-  large-heading. {
+  .large-heading {
     font-size: 40px;
   }
 
