@@ -69,3 +69,8 @@ goTopBtn.addEventListener("click", () => {
     });
   
   }(jQuery));
+
+
+  // Image Gallery
+
+  

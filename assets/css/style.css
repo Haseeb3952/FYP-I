@@ -14,6 +14,48 @@ body {
   width: 40px;
 }
 
+
+/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
+
+.gallery figure {
+  margin-bottom: 5px;
+}
+
+.gallery h3 {
+  font-size: 12px;
+  font-weight: 500;
+  color: #596570;
+  margin: 0;
+}
+
+ 
+ 
+ 
+
+ 
+
+
+
+
+ 
+
+ 
+ 
+
+.portfolio-img-holder{
+  height:150px;
+  width: 100%;
+  object-fit: contain;
+  padding: 5px;
+}
+
+
+.portfolio-img-holder>img{
+  height:100% ;
+  width: 100%;
+  object-fit: cover;
+}
+
 h1 {
   font-family: "Mooli", sans-serif;
   font-weight: 900;
