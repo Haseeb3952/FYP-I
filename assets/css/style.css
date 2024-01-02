@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+.user {
+  height: 40px;
+  width: 40px;
+}
+
 h1 {
   font-family: "Mooli", sans-serif;
   font-weight: 900;
