@@ -72,5 +72,3 @@ goTopBtn.addEventListener("click", () => {
 
 
   // Image Gallery
-
-  
