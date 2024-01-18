@@ -1,106 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <!-- Bootstrap CSS -->
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-      <!----------------------------------------- Font Awesome CDN --------------------------------------->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-      <!------------------------------------------- Box icons CDN --------------------------------------->
-      <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
-      <!------------------------------------------- AOS Animation CDN --------------------------------------->
-      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-      <!----------------------------------------------- FavIcon --------------------------------------------->
-      <link rel="shortcut icon" href="/assets/images/box.svg" type="image/x-icon">
-      <!---------------- OWL Carousal CDN -------------->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
-         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <link rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
-         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-         crossorigin="anonymous" referrerpolicy="no-referrer" />
-      <!------------------------------------------- Custom CSS Link --------------------------------------->
-      <link rel="stylesheet" href="/assets/css/style.css" />
-      <!------------------------------------------- Custom SCSS Link --------------------------------------->
-      <link rel="stylesheet" href="/assets/css/style.scss">
-      <title>SlideEase - Ai Slide Generator</title>
-   </head>
-   <body>
-      <!--------------------------------------- Navbar Section Started ------------------------------------->
-      <section class="hero">
-         <div class="circle"></div>
-         <div class="large-circle">
-            <img src="/assets/images/Chat bot-amico.svg" class="img-fluid" alt="" />
-         </div>
-         <div class="red-circle"></div>
-         <div class="gray-circle"></div>
-         <div class="setting-icon">
-            <img src="/assets/images/setting.gif" class="img-fluid" alt="" />
-         </div>
-         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light">
-               <div class="container-fluid">
-                  <a class="navbar-brand" href="#">
+
+<head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+   <!----------------------------------------- Font Awesome CDN --------------------------------------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+   <!------------------------------------------- Box icons CDN --------------------------------------->
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+   <!------------------------------------------- AOS Animation CDN --------------------------------------->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <!----------------------------------------------- FavIcon --------------------------------------------->
+   <link rel="shortcut icon" href="/assets/images/box.svg" type="image/x-icon">
+   <!---------------- OWL Carousal CDN -------------->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!------------------------------------------- Custom CSS Link --------------------------------------->
+   <link rel="stylesheet" href="/assets/css/style.css" />
+   <!------------------------------------------- Custom SCSS Link --------------------------------------->
+   <link rel="stylesheet" href="/assets/css/style.scss">
+   <title>SlideEase - Ai Slide Generator</title>
+</head>
+
+<body>
+   <!--------------------------------------- Navbar Section Started ------------------------------------->
+   <section class="hero">
+      <div class="circle"></div>
+      <div class="large-circle">
+         <img src="/assets/images/Chat bot-amico.svg" class="img-fluid" alt="" />
+      </div>
+      <div class="setting-icon">
+         <img src="/assets/images/setting.gif" class="img-fluid" alt="" />
+      </div>
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="#">
                   <img src="/assets/images/logo-r.png" class="" alt="" />
-                  </a>
-                  <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
-                     aria-controls="offcanvasScrolling" type="button" data-bs-toggle="collapse"
-                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                     aria-label="Toggle navigation">
+               </a>
+               <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling"
+                  aria-controls="offcanvasScrolling" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                  aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                     <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                        <li class="nav-item mx-4">
-                           <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                           <a class="nav-link active p-0" aria-current="page" href="#service">Service</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                           <a class="nav-link active p-0" aria-current="page" href="#how-it-works">How it works</a>
-                        </li>
-                        <li class="nav-item mx-4">
-                           <a class="nav-link active p-0" aria-current="page" href="#contact">Contact</a>
-                        </li>
-                     </ul>
-                  </div>
-                  <div class="dropstart dropdown user-dropdown">
-                     <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <div class="user">
-                           <a href="#">
-                           <img src="/assets/images/user.png" class="img-fluid" alt="">
-                           </a>
-                        </div>
-                     </button>
-                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                        <li><a class="dropdown-item" href="#">My Profile</a></li>
-                        <li><a class="dropdown-item" href="#">My Plan</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                     </ul>
-                  </div>
-               </div>
-            </nav>
-         </div>
-         <!------------------------------------------ Navbar Section Ended ------------------------------------>
-         <!------------------------------------------ OffCanvas Section Ended ------------------------------------>
-         <section>
-            <div class="offcanvas offcanvas-start" style="width: 250px;" data-bs-scroll="true" data-bs-backdrop="false"
-               tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-               <div class="offcanvas-header">
-                  <div class="offcanvas-logo">
-                     <a href="/">
-                     <img src="/assets/images/logo-r.png" alt="">
-                     </a>
-                  </div>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-               </div>
-               <div class="offcanvas-body">
-                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-grid gap-4">
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                      <li class="nav-item mx-4">
                         <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
                      </li>
@@ -115,810 +69,892 @@
                      </li>
                   </ul>
                </div>
-            </div>
-         </section>
-         <!------------------------------------------ OffCanvas Section Ended ------------------------------------>
-         <!------------------------------------------ Hero Section Started ------------------------------------>
-         <div class="container">
-            <div class="row">
-               <div class="col-12 col-md-6">
-                  <div class="pt-md-3 pt-5">
-                     <h1 data-aos="fade-up">Power Point Slides</h1>
-                     <h1 class="generator-heading" data-aos="fade-up">Generator</h1>
-                     <p class="text-muted fs-5 py-md-2 py-2 mb-0" data-aos="fade-up">
-                        Sinco delivered blazing fast, striking ai solution lorem quis
-                        data user learning analysis.
-                     </p>
-                     <h1 class="lh-base" data-aos="fade-up">
-                        Type Your
-                        <span class="generator-heading"> Presentation </span> Title
-                        here...
-                     </h1>
-                     <div class="me-md-5 me-0 border border-1 border-input rounded rounded-3" data-aos="zoom-in">
-                        <div class="input-group">
-                           <input type="text" class="form-control border-0 py-3" placeholder="Example: React, Vue, Laravel, etc."
-                              aria-label="Dollar amount (with dot and two decimal places)" />
-                        </div>
+               <div class="dropstart dropdown user-dropdown">
+                  <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                     aria-expanded="false">
+                     <div class="user">
+                        <a href="#">
+                           <img src="/assets/images/user.png" class="img-fluid" alt="">
+                        </a>
                      </div>
-                     <div class="d-flex align-items-center justify-content-end my-2" data-aos="fade-up">
-                        <div>
-                           <div class="stars">
-                              <img src="/assets/images/stars.png" class="img-fluid" alt="" />
-                           </div>
-                        </div>
-                        <div>
-                           <div class="mb-2 text-end">
-                              <div class="dropdown">
-                                 <button class="btn pages-dropdown text-white dropdown-toggle" type="button" id="dropdownMenuButton1"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                 Select Pages
-                                 </button>
-                                 <ul class="dropdown-menu pages-dropdown" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">5</a></li>
-                                    <li><a class="dropdown-item" href="#">10</a></li>
-                                    <li><a class="dropdown-item" href="#"> <span class="text-warning">Custom (Premium) <i
-                                       class='bx bx-crown'></i></span></a></li>
-                                 </ul>
-                              </div>
-                           </div>
-                           <button class="btn-presentation text-white border-0 px-3 py-2 rounded rounded-3">
-                           Generate my Presentation
-                           </button>
-                        </div>
-                     </div>
-                  </div>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                     <li><a class="dropdown-item" href="#">My Profile</a></li>
+                     <li><a class="dropdown-item" href="#">My Plan</a></li>
+                     <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
                </div>
             </div>
-            <div class="col-0 col-md-6"></div>
+         </nav>
+      </div>
+      <!------------------------------------------ Navbar Section Ended ------------------------------------>
+      <!------------------------------------------ OffCanvas Section Ended ------------------------------------>
+      <section>
+         <div class="offcanvas offcanvas-start" style="width: 250px;" data-bs-scroll="true" data-bs-backdrop="false"
+            tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+               <div class="offcanvas-logo">
+                  <a href="/">
+                     <img src="/assets/images/logo-r.png" alt="">
+                  </a>
+               </div>
+               <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+               <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-grid gap-4">
+                  <li class="nav-item mx-4">
+                     <a class="nav-link active p-0" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                     <a class="nav-link active p-0" aria-current="page" href="#service">Service</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                     <a class="nav-link active p-0" aria-current="page" href="#how-it-works">How it works</a>
+                  </li>
+                  <li class="nav-item mx-4">
+                     <a class="nav-link active p-0" aria-current="page" href="#contact">Contact</a>
+                  </li>
+               </ul>
+            </div>
          </div>
       </section>
-      <!------------------------------------------ Hero Section Ended -------------------------------------->
-      <button id="go-top-btn">
+      <!------------------------------------------ OffCanvas Section Ended ------------------------------------>
+      <!------------------------------------------ Hero Section Started ------------------------------------>
+      <div class="container">
+         <div class="row">
+            <div class="col-12 col-lg-6 col-md-9">
+               <div class="pt-md-3 pt-5">
+                  <h1 data-aos="fade-up">Power Point Slides</h1>
+                  <h1 class="generator-heading" data-aos="fade-up">Generator</h1>
+                  <p class="text-muted fs-5 py-md-2 py-2 mb-0" data-aos="fade-up">
+                     Sinco delivered blazing fast, striking ai solution lorem quis
+                     data user learning analysis.
+                  </p>
+                  <h1 class="lh-base" data-aos="fade-up">
+                     Type Your
+                     <span class="generator-heading"> Presentation </span> Title
+                     here...
+                  </h1>
+                  <div class="me-md-5 me-0 border border-1 border-input rounded rounded-3" data-aos="zoom-in">
+                     <div class="input-group">
+                        <input type="text" class="form-control border-0 py-3"
+                           placeholder="Example: React, Vue, Laravel, etc."
+                           aria-label="Dollar amount (with dot and two decimal places)" />
+                     </div>
+                  </div>
+                  <div class="d-flex justify-content-between my-3 radio-btns">
+                     <div>
+                        <div class="d-flex gap-3">
+                           <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                              <label class="form-check-label" for="flexRadioDefault1">
+                                School
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                              <label class="form-check-label" for="flexRadioDefault2">
+                                College
+                              </label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3" checked>
+                              <label class="form-check-label" for="flexRadioDefault3">
+                                University
+                              </label>
+                            </div>
+                           
+                        </div>
+                     </div>
+                     <div>
+                        <div class="dropdown">
+                           <button class="btn pages-dropdown text-white dropdown-toggle" type="button"
+                              id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              Select Pages
+                           </button>
+                           <ul class="dropdown-menu pages-dropdown" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="#">5</a></li>
+                              <li><a class="dropdown-item" href="#">10</a></li>
+                              <li><a class="dropdown-item" href="#"> <span class="text-warning">Custom (Premium) <i
+                                          class='bx bx-crown'></i></span></a></li>
+                           </ul>
+                        </div>
+                        <button class="custom-btn btn-12 mt-2"><span>Please Wait!</span><span>Generate</span></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="col-0 col-md-2"></div>
+      </div>
+   </section>
+   <!------------------------------------------ Hero Section Ended -------------------------------------->
+   <button id="go-top-btn">
       <i class="fa fa-level-up" aria-hidden="true"></i>
-      </button>
-      <!-------------------------------------- Presentation Section Started -------------------------------->
-      <section class="contact" id="portfolio">
-         <div class="container">
-            <div class="">
+   </button>
+   <!-------------------------------------- Presentation Section Started -------------------------------->
+   <section class="contact" id="portfolio">
+      <div class="container">
+         <div class="">
+            <h1 class="lh-base" data-aos="fade-up">
+               Select Your
+               <span class="generator-heading"> Presentation </span> Style
+               here...
+            </h1>
+         </div>
+         <div class="row gallery">
+            <div class="py-3">
+               <h5 class="fw-bold" data-aos="fade-up">Free Templates</h5>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1000">
+               <div class="img-thumbnail">
+                  <a
+                     href="https://img.freepik.com/free-vector/server-room-cloud-data-cloud-storage-big-data-processing-concept-networking-internet_39422-625.jpg?w=1060&t=st=1704195714~exp=1704196314~hmac=493b22a9f5bbd1c780f1bbe22f8d1f834a9230e204691ad116a1184fa7999eea">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid"
+                              src="https://img.freepik.com/free-vector/server-room-cloud-data-cloud-storage-big-data-processing-concept-networking-internet_39422-625.jpg?w=1060&t=st=1704195714~exp=1704196314~hmac=493b22a9f5bbd1c780f1bbe22f8d1f834a9230e204691ad116a1184fa7999eea"
+                              alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Professional Elegance</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1500">
+               <div class="img-thumbnail">
+                  <a href="/assets/images/Presentation_Template_2.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="/assets/images/Presentation_Template_2.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Global Impact Summit</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2000">
+               <div class="img-thumbnail">
+                  <a href="/assets/images/Presentation_Template_1.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="/assets/images/Presentation_Template_1.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Elegant Executive Suite</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2500">
+               <div class="img-thumbnail">
+                  <a href="/assets/images/Presentation_Template_3.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="/assets/images/Presentation_Template_3.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Vibrant Visionary Vortex</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="py-3">
+               <h5 class="fw-bold" data-aos="fade-up">Paid Templates</h5>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1000">
+               <div class="img-thumbnail">
+                  <a href="assets/images/Presentation_Template_4.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="assets/images/Presentation_Template_4.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Summit Spectra Solutions</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1500">
+               <div class="img-thumbnail">
+                  <a href="assets/images/Presentation_Template_5.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="assets/images/Presentation_Template_5.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Pinnacle Presentations Pro</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2000">
+               <div class="img-thumbnail">
+                  <a href="assets/images/Presentation_Template_6.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="assets/images/Presentation_Template_6.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Aristocratic Advantage Aesthetics</h3>
+                  </div>
+               </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2500">
+               <div class="img-thumbnail">
+                  <a href="assets/images/Presentation_Template_7.png">
+                     <figure>
+                        <div class="portfolio-img-holder">
+                           <img class="img-fluid" src="assets/images/Presentation_Template_7.png" alt="Random Image">
+                        </div>
+                     </figure>
+                  </a>
+                  <div class="d-flex justify-content-between align-items-center">
+                     <h3>Prestige Prism Presentations</h3>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </section>
+   <!--------------------------------------- Presentation Section Ended --------------------------------->
+   <!--------------------------------------- Services Section Started ----------------------------------->
+   <section id="service">
+      <div class="container">
+         <div class="row d-flex align-items-center py-5">
+            <div class="col-12 col-md-6">
                <h1 class="lh-base" data-aos="fade-up">
-                  Select Your
-                  <span class="generator-heading"> Presentation </span> Style
-                  here...
+                  <span class="generator-heading"> Services </span> We Provide
+                  <br />
+                  with Quality.
                </h1>
             </div>
-            <div class="row gallery">
-               <div class="py-3">
-                  <h5 class="fw-bold" data-aos="fade-up">Free Templates</h5>
+            <div class="col-12 col-md-6">
+               <p class="text-muted fs-5" data-aos="fade-up">
+                  NLP entails applying algorithms to identify and extract rules such
+                  that the unstructured language data is converted.
+               </p>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-7 d-flex justify-content-center align-items-center" data-aos-duration="3000"
+               data-aos="flip-left">
+               <div class="services-circle d-flex justify-content-center align-items-center">
+                  <img src="/assets/images/services.jpg" class="" alt="" />
                </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="img-thumbnail">
-                     <a
-                        href="https://img.freepik.com/free-vector/server-room-cloud-data-cloud-storage-big-data-processing-concept-networking-internet_39422-625.jpg?w=1060&t=st=1704195714~exp=1704196314~hmac=493b22a9f5bbd1c780f1bbe22f8d1f834a9230e204691ad116a1184fa7999eea">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid"
-                                 src="https://img.freepik.com/free-vector/server-room-cloud-data-cloud-storage-big-data-processing-concept-networking-internet_39422-625.jpg?w=1060&t=st=1704195714~exp=1704196314~hmac=493b22a9f5bbd1c780f1bbe22f8d1f834a9230e204691ad116a1184fa7999eea"
-                                 alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Professional Elegance</h3>
+            </div>
+            <div class="col-12 col-md-5" data-aos="zoom-in">
+               <div class="pt-md-0 pt-5">
+                  <div class="client-title text-center text-uppercase rounded rounded-pill" data-aos="zoom-in">
+                     <p class="py-2">Over 150K+ Clients</p>
+                  </div>
+                  <h1 class="lh-base py-2" data-aos="fade-up">
+                     Target <span class="generator-heading">Audience</span> for your
+                     business.
+                  </h1>
+                  <p class="text-muted fs-5 py-2" data-aos="fade-up">
+                     AI technology is perfect for best business solutions & we offer
+                     help to achieve your goals.
+                  </p>
+                  <div class="d-flex align-items-center gap-3" data-aos="fade-up">
+                     <div>
+                        <i class="bx bx-check fs-3"></i>
+                     </div>
+                     <div>
+                        <h5 class="m-0 text-muted">Various analysis options.</h6>
                      </div>
                   </div>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1500">
-                  <div class="img-thumbnail">
-                     <a href="/assets/images/Presentation_Template_2.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="/assets/images/Presentation_Template_2.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Global Impact Summit</h3>
+                  <div class="d-flex align-items-center gap-3 py-3" data-aos="fade-up">
+                     <div>
+                        <i class="bx bx-check fs-3"></i>
+                     </div>
+                     <div>
+                        <h5 class="m-0 text-muted">Page Load (time, size, number of requests).</h5>
                      </div>
                   </div>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2000">
-                  <div class="img-thumbnail">
-                     <a href="/assets/images/Presentation_Template_1.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="/assets/images/Presentation_Template_1.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Elegant Executive Suite</h3>
+                  <div class="d-flex align-items-center gap-3" data-aos="fade-up">
+                     <div>
+                        <i class="bx bx-check fs-3"></i>
                      </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2500">
-                  <div class="img-thumbnail">
-                     <a href="/assets/images/Presentation_Template_3.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="/assets/images/Presentation_Template_3.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Vibrant Visionary Vortex</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="py-3">
-                  <h5 class="fw-bold" data-aos="fade-up">Paid Templates</h5>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1000">
-                  <div class="img-thumbnail">
-                     <a href="assets/images/Presentation_Template_4.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="assets/images/Presentation_Template_4.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Summit Spectra Solutions</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="1500">
-                  <div class="img-thumbnail">
-                     <a href="assets/images/Presentation_Template_5.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="assets/images/Presentation_Template_5.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Pinnacle Presentations Pro</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2000">
-                  <div class="img-thumbnail">
-                     <a href="assets/images/Presentation_Template_6.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="assets/images/Presentation_Template_6.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Aristocratic Advantage Aesthetics</h3>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-lg-3 col-md-4 col-xs-6 thumb" data-aos="fade-up" data-aos-duration="2500">
-                  <div class="img-thumbnail">
-                     <a href="assets/images/Presentation_Template_7.png">
-                        <figure>
-                           <div class="portfolio-img-holder">
-                              <img class="img-fluid" src="assets/images/Presentation_Template_7.png" alt="Random Image">
-                           </div>
-                        </figure>
-                     </a>
-                     <div class="d-flex justify-content-between align-items-center">
-                        <h3>Prestige Prism Presentations</h3>
+                     <div>
+                        <h5 class="m-0 text-muted">Various analysis options.</h5>
                      </div>
                   </div>
                </div>
             </div>
-      </section>
-      <!--------------------------------------- Presentation Section Ended --------------------------------->
-      <!--------------------------------------- Services Section Started ----------------------------------->
-      <section id="service">
+         </div>
+      </div>
+   </section>
+   <!---------------------------------------- Services Section Ended ---------------------------------->
+   <!------------------------------------- How it Works Section Started ------------------------------->
+   <section class="py-5" id="how-it-works">
       <div class="container">
-      <div class="row d-flex align-items-center py-5">
-      <div class="col-12 col-md-6">
-      <h1 class="lh-base" data-aos="fade-up">
-      <span class="generator-heading"> Services </span> We Provide
-      <br />
-      with Quality.
-      </h1>
+         <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-md-6">
+               <div class="work-title text-center text-uppercase rounded rounded-pill" data-aos="zoom-in">
+                  <p class="py-2"> Work Process</p>
+               </div>
+               <h1 class="py-2 lh-base" data-aos="fade-up">How <span class="generator-heading">SlideEase</span> process
+                  <br>
+                  & works.</h1>
+               <div class="card p-4 border border-0" data-aos="zoom-in">
+                  <div class="number-card">
+                     <div class="number-circle d-flex justify-content-center align-items-center">
+                        1
+                     </div>
+                     <div>
+                        <h5 class="fw-bold">Frame the Problem</h5>
+                        <p class="text-muted">Learn content by interacting with an expert lesson or watching a video.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+               <div class="card p-4 border border-0 my-4" data-aos="zoom-in">
+                  <div class="number-card">
+                     <div class="number-circle d-flex justify-content-center align-items-center">
+                        2
+                     </div>
+                     <div>
+                        <h5 class="fw-bold">Collect the Data</h5>
+                        <p class="text-muted">Practice what you learned on realistic SAT test questions.</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="card p-4 border border-0" data-aos="zoom-in">
+                  <div class="number-card">
+                     <div class="number-circle d-flex justify-content-center align-items-center">
+                        3
+                     </div>
+                     <div>
+                        <h5 class="fw-bold">
+                           Process the Data</h5>
+                        <p class="text-muted">Have to be repudiated annoyances accepted the wise lorem ispum sample
+                           text.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-6" data-aos-duration="3000" data-aos="flip-right">
+               <div class="ai-circle">
+                  <div class="work-circle d-flex justify-content-center align-items-center">
+                     <img src="/assets/images/ai-chip.jpg" class="rounded rounded-circle" alt="" />
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="col-12 col-md-6">
-      <p class="text-muted fs-5" data-aos="fade-up">
-      NLP entails applying algorithms to identify and extract rules such
-      that the unstructured language data is converted.
-      </p>
-      </div>
-      </div>
-      </div>
-      <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-12 col-md-7 d-flex justify-content-center align-items-center" data-aos-duration="3000"
-         data-aos="flip-left">
-      <div class="services-circle d-flex justify-content-center align-items-center">
-      <img src="/assets/images/services.jpg" class="" alt="" />
-      </div>
-      </div>
-      <div class="col-12 col-md-5" data-aos="zoom-in">
-      <div class="pt-md-0 pt-5">
-      <div class="client-title text-center text-uppercase rounded rounded-pill" data-aos="zoom-in">
-      <p class="py-2">Over 150K+ Clients</p>
-      </div>
-      <h1 class="lh-base py-2" data-aos="fade-up">
-      Target <span class="generator-heading">Audience</span> for your
-      business.
-      </h1>
-      <p class="text-muted fs-5 py-2" data-aos="fade-up">
-      AI technology is perfect for best business solutions & we offer
-      help to achieve your goals.
-      </p>
-      <div class="d-flex align-items-center gap-3" data-aos="fade-up">
-      <div>
-      <i class="bx bx-check fs-3"></i>
-      </div>
-      <div>
-      <h5 class="m-0 text-muted">Various analysis options.</h6>
-      </div>
-      </div>
-      <div class="d-flex align-items-center gap-3 py-3" data-aos="fade-up">
-      <div>
-      <i class="bx bx-check fs-3"></i>
-      </div>
-      <div>
-      <h5 class="m-0 text-muted">Page Load (time, size, number of requests).</h5>
-      </div>
-      </div>
-      <div class="d-flex align-items-center gap-3" data-aos="fade-up">
-      <div>
-      <i class="bx bx-check fs-3"></i>
-      </div>
-      <div>
-      <h5 class="m-0 text-muted">Various analysis options.</h5>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!---------------------------------------- Services Section Ended ---------------------------------->
-      <!------------------------------------- How it Works Section Started ------------------------------->
-      <section class="py-5" id="how-it-works">
-      <div class="container">
-      <div class="row d-flex justify-content-center align-items-center">
-      <div class="col-12 col-md-6">
-      <div class="work-title text-center text-uppercase rounded rounded-pill" data-aos="zoom-in">
-      <p class="py-2"> Work Process</p>
-      </div>
-      <h1 class="py-2 lh-base" data-aos="fade-up">How <span class="generator-heading">SlideEase</span> process <br>
-      & works.</h1>
-      <div class="card p-4 border border-0" data-aos="zoom-in">
-      <div class="number-card">
-      <div class="number-circle d-flex justify-content-center align-items-center">
-      1
-      </div>
-      <div>
-      <h5 class="fw-bold">Frame the Problem</h5>
-      <p class="text-muted">Learn content by interacting with an expert lesson or watching a video.</p>
-      </div>
-      </div>
-      </div>
-      <div class="card p-4 border border-0 my-4" data-aos="zoom-in">
-      <div class="number-card">
-      <div class="number-circle d-flex justify-content-center align-items-center">
-      2
-      </div>
-      <div>
-      <h5 class="fw-bold">Collect the Data</h5>
-      <p class="text-muted">Practice what you learned on realistic SAT test questions.</p>
-      </div>
-      </div>
-      </div>
-      <div class="card p-4 border border-0" data-aos="zoom-in">
-      <div class="number-card">
-      <div class="number-circle d-flex justify-content-center align-items-center">
-      3
-      </div>
-      <div>
-      <h5 class="fw-bold">
-      Process the Data</h5>
-      <p class="text-muted">Have to be repudiated annoyances accepted the wise lorem ispum sample text.</p>
-      </div>
-      </div>
-      </div>
-      </div>
-      <div class="col-12 col-md-6" data-aos-duration="3000" data-aos="flip-right">
-      <div class="ai-circle">
-      <div class="work-circle d-flex justify-content-center align-items-center">
-      <img src="/assets/images/ai-chip.jpg" class="rounded rounded-circle" alt="" />
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!-------------------------------------- How it Works Section Ended -------------------------------->
-      <!--------------------------------------- Solutions Section Started -------------------------------->
-      <section data-aos="zoom-in">
+   </section>
+   <!-------------------------------------- How it Works Section Ended -------------------------------->
+   <!--------------------------------------- Solutions Section Started -------------------------------->
+   <section data-aos="zoom-in">
       <div class="container solution-section">
-      <div class="row p-5">
-      <div class="col-12 col-md-4">
-      <div class="text-center text-white p-3">
-      <h1 class="large-heading">20mil</h1>
-      <h5>Human labor hours saved
-      with help of AI</h5>
+         <div class="row p-5">
+            <div class="col-12 col-md-4">
+               <div class="text-center text-white p-3">
+                  <h1 class="large-heading">20mil</h1>
+                  <h5>Human labor hours saved
+                     with help of AI</h5>
+               </div>
+            </div>
+            <div class="col-12 col-md-4">
+               <div class="text-center text-white p-3">
+                  <h1 class="large-heading">1.3b+</h1>
+                  <h5>Human labor hours saved
+                     with help of AI</h5>
+               </div>
+            </div>
+            <div class="col-12 col-md-4">
+               <div class="text-center text-white p-3">
+                  <h1 class="large-heading">$15mil+</h1>
+                  <h5>Human labor hours saved
+                     with help of AI</h5>
+               </div>
+            </div>
+         </div>
       </div>
-      </div>
-      <div class="col-12 col-md-4">
-      <div class="text-center text-white p-3">
-      <h1 class="large-heading">1.3b+</h1>
-      <h5>Human labor hours saved
-      with help of AI</h5>
-      </div>
-      </div>
-      <div class="col-12 col-md-4">
-      <div class="text-center text-white p-3">
-      <h1 class="large-heading">$15mil+</h1>
-      <h5>Human labor hours saved
-      with help of AI</h5>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!---------------------------------------- Solutions Section Ended --------------------------------->
-      <!-------------------------------------- Testimonials Section Started ------------------------------>
-      <section class="bg-light-blue">
+   </section>
+   <!---------------------------------------- Solutions Section Ended --------------------------------->
+   <!-------------------------------------- Testimonials Section Started ------------------------------>
+   <section class="bg-light-blue">
       <div class="container">
-      <div class="d-flex justify-content-center mt-5" data-aos="zoom-in">
-      <div class="d-flex text-uppercase justify-content-center align-items-center testimonials rounded rounded-pill">
-      <p class="py-2 m-0">Testimonials</p>
+         <div class="d-flex justify-content-center mt-5" data-aos="zoom-in">
+            <div
+               class="d-flex text-uppercase justify-content-center align-items-center testimonials rounded rounded-pill">
+               <p class="py-2 m-0">Testimonials</p>
+            </div>
+         </div>
+         <h1 class="text-center py-4" data-aos="fade-up">Words from <span class="generator-heading">Client</span></h1>
+         <div class="row">
+            <section>
+               <div class="container">
+                  <div class="row">
+                     <div class="owl-carousel owl-theme py-4">
+                        <div class="item">
+                           <div class="client-testimonials mx-md-5 mx-0 py-3">
+                              <div class="d-flex justify-content-center align-items-center">
+                                 <div class="quote py-md-4 py-2">
+                                    <img src="/assets/images/quote.png" class="img-fluid" alt="">
+                                 </div>
+                              </div>
+                              <h2 class="px-md-5 px-4 py-4 testimonial-content">Having a home based business is a
+                                 wonderful asset
+                                 to your
+                                 life. The problem still stands it comes timeadvertise your business for a cheap cost. I
+                                 know you
+                                 have looked answer everywhere.</h2>
+                              <h3 class="text-center">Abdul Haseeb</h3>
+                              <p class="text-center text-muted">Web Developer</p>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="client-testimonials mx-md-5 mx-0 py-3">
+                              <div class="d-flex justify-content-center align-items-center">
+                                 <div class="quote py-md-4 py-2">
+                                    <img src="/assets/images/quote.png" class="img-fluid" alt="">
+                                 </div>
+                              </div>
+                              <h2 class="px-md-5 px-4 py-4 testimonial-content">Having a home based business is a
+                                 wonderful asset
+                                 to your
+                                 life. The problem still stands it comes timeadvertise your business for a cheap cost. I
+                                 know you
+                                 have looked answer everywhere.</h2>
+                              <h3 class="text-center">Abdul Haseeb</h3>
+                              <p class="text-center text-muted">Web Developer</p>
+                           </div>
+                        </div>
+                        <div class="item">
+                           <div class="client-testimonials mx-md-5 mx-0 py-3">
+                              <div class="d-flex justify-content-center align-items-center">
+                                 <div class="quote py-md-4 py-2">
+                                    <img src="/assets/images/quote.png" class="img-fluid" alt="">
+                                 </div>
+                              </div>
+                              <h2 class="px-md-5 px-4 py-4 testimonial-content">Having a home based business is a
+                                 wonderful asset
+                                 to your
+                                 life. The problem still stands it comes timeadvertise your business for a cheap cost. I
+                                 know you
+                                 have looked answer everywhere.</h2>
+                              <h3 class="text-center">Abdul Haseeb</h3>
+                              <p class="text-center text-muted">Web Developer</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+         </div>
       </div>
-      </div>
-      <h1 class="text-center py-4" data-aos="fade-up">Words from <span class="generator-heading">Client</span></h1>
-      <div class="row">
-      <section>
+   </section>
+   <!--------------------------------------- Testimonials Section Ended ------------------------------->
+   <!---------------------------------------- Plan Section Started------------------------------------->
+   <section class="plan hero-bg py-5 mt-5">
       <div class="container">
-      <div class="row">
-      <div class="owl-carousel owl-theme py-4">
-      <div class="item">
-      <div class="client-testimonials mx-md-5 mx-0 py-3">
-      <div class="d-flex justify-content-center align-items-center">
-      <div class="quote py-md-4 py-2">
-      <img src="/assets/images/quote.png" class="img-fluid" alt="">
+         <div class="plan_heading text-center pb-4">
+            <h1 class="text-center py-4" data-aos="fade-up">Choose Your <span class="generator-heading">Plan</span></h1>
+            <p data-aos="fade-up">
+               When someone does something that they know that they shouldn’t do,
+               did they.
+            </p>
+         </div>
+         <div class="row d-flex justify-content-center gap-md-5 gap-3">
+            <div class="col-12 col-md-3 pricing_plan py-5" data-aos="fade-up" data-aos-duration="1000">
+               <div class="center-div">
+                  <div class="outside_circle">
+                     <div class="inside_circle">
+                        <h1>01</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="plan_content text-center pt-3">
+                  <h5>Free</h5>
+                  <p>For the individuals</p>
+                  <hr />
+                  <p>Secure Online Transfer</p>
+                  <hr />
+                  <p>Unlimited Styles for interface</p>
+                  <hr />
+                  <p>Reliable Customer Service</p>
+                  <hr />
+                  <h2>£199.00</h2>
+               </div>
+               <div class="hide text-center">
+                  <button class="btn btn-buy-now btn-primary">BUY NOW</button>
+               </div>
+            </div>
+            <div class="col-12 col-md-3 pricing_plan py-5" data-aos="fade-up" data-aos-duration="2000">
+               <div class="center-div">
+                  <div class="outside_circle">
+                     <div class="inside_circle">
+                        <h1>02</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="plan_content text-center pt-3">
+                  <h5>Monthly</h5>
+                  <p>For the individuals</p>
+                  <hr />
+                  <p>Secure Online Transfer</p>
+                  <hr />
+                  <p>Unlimited Styles for interface</p>
+                  <hr />
+                  <p>Reliable Customer Service</p>
+                  <hr />
+                  <h2>£299.00</h2>
+                  <div class="hide text-center">
+                     <button class="btn btn-buy-now btn-primary">BUY NOW</button>
+                  </div>
+               </div>
+            </div>
+            <div class="col-12 col-md-3 pricing_plan py-5" data-aos="fade-up" data-aos-duration="3000">
+               <div class="center-div">
+                  <div class="outside_circle">
+                     <div class="inside_circle">
+                        <h1>03</h1>
+                     </div>
+                  </div>
+               </div>
+               <div class="plan_content text-center pt-3">
+                  <h5>Yearly</h5>
+                  <p>For the individuals</p>
+                  <hr />
+                  <p>Secure Online Transfer</p>
+                  <hr />
+                  <p>Unlimited Styles for interface</p>
+                  <hr />
+                  <p>Reliable Customer Service</p>
+                  <hr />
+                  <h2>£399.00</h2>
+                  <div class="hide text-center">
+                     <button class="btn btn-buy-now btn-primary">BUY NOW</button>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      </div>
-      <h2 class="px-md-5 px-4 py-4 testimonial-content">Having a home based business is a wonderful asset
-      to your
-      life. The problem still stands it comes timeadvertise your business for a cheap cost. I know you
-      have looked answer everywhere.</h2>
-      <h3 class="text-center">Abdul Haseeb</h3>
-      <p class="text-center text-muted">Web Developer</p>
-      </div>
-      </div>
-      <div class="item">
-      <div class="client-testimonials mx-md-5 mx-0 py-3">
-      <div class="d-flex justify-content-center align-items-center">
-      <div class="quote py-md-4 py-2">
-      <img src="/assets/images/quote.png" class="img-fluid" alt="">
-      </div>
-      </div>
-      <h2 class="px-md-5 px-4 py-4 testimonial-content">Having a home based business is a wonderful asset
-      to your
-      life. The problem still stands it comes timeadvertise your business for a cheap cost. I know you
-      have looked answer everywhere.</h2>
-      <h3 class="text-center">Abdul Haseeb</h3>
-      <p class="text-center text-muted">Web Developer</p>
-      </div>
-      </div>
-      <div class="item">
-      <div class="client-testimonials mx-md-5 mx-0 py-3">
-      <div class="d-flex justify-content-center align-items-center">
-      <div class="quote py-md-4 py-2">
-      <img src="/assets/images/quote.png" class="img-fluid" alt="">
-      </div>
-      </div>
-      <h2 class="px-md-5 px-4 py-4 testimonial-content">Having a home based business is a wonderful asset
-      to your
-      life. The problem still stands it comes timeadvertise your business for a cheap cost. I know you
-      have looked answer everywhere.</h2>
-      <h3 class="text-center">Abdul Haseeb</h3>
-      <p class="text-center text-muted">Web Developer</p>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      </div>
-      </div>
-      </section>
-      <!--------------------------------------- Testimonials Section Ended ------------------------------->
-      <!---------------------------------------- Plan Section Started------------------------------------->
-      <section class="plan hero-bg py-5 mt-5">
+   </section>
+   <!------------------------------------------- Plan Section Ended------------------------------------>
+   <!----------------------------------------- FAQ's Section Started ---------------------------------->
+   <section class="faq">
       <div class="container">
-      <div class="plan_heading text-center pb-4">
-      <h1 class="text-center py-4" data-aos="fade-up">Choose Your <span class="generator-heading">Plan</span></h1>
-      <p data-aos="fade-up">
-      When someone does something that they know that they shouldn’t do,
-      did they.
-      </p>
+         <div class="row">
+            <div class="col-12 col-md-6">
+               <div
+                  class="d-flex text-uppercase justify-content-center align-items-center testimonials rounded rounded-pill"
+                  data-aos="zoom-in">
+                  <p class="py-2 m-0 text-center">QUESTIONS & ANSWERS</p>
+               </div>
+               <h1 class="large-heading my-3" data-aos="fade-up">Any <span class="generator-heading">Questions?</span>
+                  Find
+                  here.</h1>
+               <h5 class="text-muted lh-base py-3" data-aos="fade-up">Don’t find your answer here? just send us a
+                  message for
+                  any query.</h5>
+               <button class="border-0 px-4 py-2 rounded rounded-3 btn-contact text-white" data-aos="fade-up">
+                  Contact us
+               </button>
+            </div>
+            <div class="col-12 col-md-6">
+               <div class="my-md-0 my-5">
+                  <div class="accordion" id="accordionExample">
+                     <div class="accordion-item border-0 p-2" data-aos="zoom-in">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                              What is Web Hosting?
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body text-muted">
+                              <strong class="text-dark">They not only understand</strong> what I say but read between
+                              the lines
+                              and also give me ideas
+                              of my own. AI technology is perfect for best business solutions.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 p-2 my-4" data-aos="zoom-in">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              How do you weigh different criteria in your process?
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <strong class="text-dark">They not only understand</strong> what I say but read between
+                              the lines
+                              and also give me ideas
+                              of my own. AI technology is perfect for best business solutions.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 p-2" data-aos="zoom-in">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              What can I use to build my website?
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <strong class="text-dark">They not only understand</strong> what I say but read between
+                              the lines
+                              and also give me ideas
+                              of my own. AI technology is perfect for best business solutions.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 p-2 my-4" data-aos="zoom-in">
+                        <h2 class="accordion-header" id="headingFour">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                              What can I use to build my website?
+                           </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <strong class="text-dark">They not only understand</strong> what I say but read between
+                              the lines
+                              and also give me ideas
+                              of my own. AI technology is perfect for best business solutions.
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item border-0 p-2" data-aos="zoom-in">
+                        <h2 class="accordion-header" id="headingFive">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                              data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                              What can I use to build my website?
+                           </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                           data-bs-parent="#accordionExample">
+                           <div class="accordion-body">
+                              <strong class="text-dark">They not only understand</strong> what I say but read between
+                              the lines
+                              and also give me ideas
+                              of my own. AI technology is perfect for best business solutions.
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="row d-flex justify-content-center gap-md-5 gap-3">
-      <div class="col-12 col-md-3 pricing_plan py-5" data-aos="fade-up" data-aos-duration="1000">
-      <div class="center-div">
-      <div class="outside_circle">
-      <div class="inside_circle">
-      <h1>01</h1>
-      </div>
-      </div>
-      </div>
-      <div class="plan_content text-center pt-3">
-      <h5>Free</h5>
-      <p>For the individuals</p>
-      <hr />
-      <p>Secure Online Transfer</p>
-      <hr />
-      <p>Unlimited Styles for interface</p>
-      <hr />
-      <p>Reliable Customer Service</p>
-      <hr />
-      <h2>£199.00</h2>
-      </div>
-      <div class="hide text-center">
-      <button class="btn btn-buy-now btn-primary">BUY NOW</button>
-      </div>
-      </div>
-      <div class="col-12 col-md-3 pricing_plan py-5" data-aos="fade-up" data-aos-duration="2000">
-      <div class="center-div">
-      <div class="outside_circle">
-      <div class="inside_circle">
-      <h1>02</h1>
-      </div>
-      </div>
-      </div>
-      <div class="plan_content text-center pt-3">
-      <h5>Monthly</h5>
-      <p>For the individuals</p>
-      <hr />
-      <p>Secure Online Transfer</p>
-      <hr />
-      <p>Unlimited Styles for interface</p>
-      <hr />
-      <p>Reliable Customer Service</p>
-      <hr />
-      <h2>£299.00</h2>
-      <div class="hide text-center">
-      <button class="btn btn-buy-now btn-primary">BUY NOW</button>
-      </div>
-      </div>
-      </div>
-      <div class="col-12 col-md-3 pricing_plan py-5" data-aos="fade-up" data-aos-duration="3000">
-      <div class="center-div">
-      <div class="outside_circle">
-      <div class="inside_circle">
-      <h1>03</h1>
-      </div>
-      </div>
-      </div>
-      <div class="plan_content text-center pt-3">
-      <h5>Yearly</h5>
-      <p>For the individuals</p>
-      <hr />
-      <p>Secure Online Transfer</p>
-      <hr />
-      <p>Unlimited Styles for interface</p>
-      <hr />
-      <p>Reliable Customer Service</p>
-      <hr />
-      <h2>£399.00</h2>
-      <div class="hide text-center">
-      <button class="btn btn-buy-now btn-primary">BUY NOW</button>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!------------------------------------------- Plan Section Ended------------------------------------>
-      <!----------------------------------------- FAQ's Section Started ---------------------------------->
-      <section class="faq">
-      <div class="container">
-      <div class="row">
-      <div class="col-12 col-md-6">
-      <div class="d-flex text-uppercase justify-content-center align-items-center testimonials rounded rounded-pill"
-         data-aos="zoom-in">
-      <p class="py-2 m-0 text-center">QUESTIONS & ANSWERS</p>
-      </div>
-      <h1 class="large-heading my-3" data-aos="fade-up">Any <span class="generator-heading">Questions?</span> Find
-      here.</h1>
-      <h5 class="text-muted lh-base py-3" data-aos="fade-up">Don’t find your answer here? just send us a message for
-      any query.</h5>
-      <button class="border-0 px-4 py-2 rounded rounded-3 btn-contact text-white" data-aos="fade-up" 
-         >
-      Contact us
-      </button>
-      </div>
-      <div class="col-12 col-md-6">
-      <div class="my-md-0 my-5">
-      <div class="accordion" id="accordionExample">
-      <div class="accordion-item border-0 p-2" data-aos="zoom-in">
-      <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-         aria-expanded="true" aria-controls="collapseOne">
-      What is Web Hosting?
-      </button>
-      </h2>
-      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-         data-bs-parent="#accordionExample">
-      <div class="accordion-body text-muted">
-      <strong class="text-dark">They not only understand</strong> what I say but read between the lines
-      and also give me ideas
-      of my own. AI technology is perfect for best business solutions.
-      </div>
-      </div>
-      </div>
-      <div class="accordion-item border-0 p-2 my-4" data-aos="zoom-in">
-      <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-         data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-      How do you weigh different criteria in your process?
-      </button>
-      </h2>
-      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-         data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      <strong class="text-dark">They not only understand</strong> what I say but read between the lines
-      and also give me ideas
-      of my own. AI technology is perfect for best business solutions.
-      </div>
-      </div>
-      </div>
-      <div class="accordion-item border-0 p-2" data-aos="zoom-in">
-      <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-      What can I use to build my website?
-      </button>
-      </h2>
-      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-         data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      <strong class="text-dark">They not only understand</strong> what I say but read between the lines
-      and also give me ideas
-      of my own. AI technology is perfect for best business solutions.
-      </div>
-      </div>
-      </div>
-      <div class="accordion-item border-0 p-2 my-4" data-aos="zoom-in">
-      <h2 class="accordion-header" id="headingFour">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-         data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
-      What can I use to build my website?
-      </button>
-      </h2>
-      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
-         data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      <strong class="text-dark">They not only understand</strong> what I say but read between the lines
-      and also give me ideas
-      of my own. AI technology is perfect for best business solutions.
-      </div>
-      </div>
-      </div>
-      <div class="accordion-item border-0 p-2" data-aos="zoom-in">
-      <h2 class="accordion-header" id="headingFive">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-         data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
-      What can I use to build my website?
-      </button>
-      </h2>
-      <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
-         data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-      <strong class="text-dark">They not only understand</strong> what I say but read between the lines
-      and also give me ideas
-      of my own. AI technology is perfect for best business solutions.
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!------------------------------------------ FAQ's Section Ended ----------------------------------->
-      <!---------------------------------------- Sponsers Section Started -------------------------------->
-      <section>
+   </section>
+   <!------------------------------------------ FAQ's Section Ended ----------------------------------->
+   <!---------------------------------------- Sponsers Section Started -------------------------------->
+   <section>
       <div class="container my-5">
-      <h1 class="text-center py-4" data-aos="zoom-in">Our <span class="generator-heading">Sponsers</span></h1>
-      <div class="row">
-      <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="1000">
-      <a href="https://www.google.com/" target="_blank">
-      <div class="sponsers google text-center px-3 py-3">
-      <img src="/assets/images/google.png" class="img-fluid" alt="">
+         <h1 class="text-center py-4" data-aos="zoom-in">Our <span class="generator-heading">Sponsers</span></h1>
+         <div class="row">
+            <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="1000">
+               <a href="https://www.google.com/" target="_blank">
+                  <div class="sponsers google text-center px-3 py-3">
+                     <img src="/assets/images/google.png" class="img-fluid" alt="">
+                  </div>
+               </a>
+            </div>
+            <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="1500">
+               <a href="https://chat.openai.com/" target="_blank">
+                  <div class="sponsers chat-gpt text-center px-3 py-3">
+                     <img src="/assets/images/chatgpt.svg" class="img-fluid" alt="">
+                  </div>
+               </a>
+            </div>
+            <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="2000">
+               <a href="https://www.logoai.com/" target="_blank">
+                  <div class="sponsers logo-ai text-center px-3 py-3">
+                     <img src="/assets/images/logoai.svg" class="img-fluid" alt="">
+                  </div>
+               </a>
+            </div>
+            <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="2500">
+               <a href="https://www.figma.com/" target="_blank">
+                  <div class="sponsers figma text-center px-3 py-3">
+                     <img src="/assets/images/figma.svg" class="img-fluid" alt="">
+                  </div>
+               </a>
+            </div>
+            <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="3000">
+               <a href="https://unsplash.com/" target="_blank">
+                  <div class="sponsers unsplash text-center px-3 py-3">
+                     <img src="/assets/images/unsplash.png" class="img-fluid" alt="">
+                  </div>
+               </a>
+            </div>
+         </div>
       </div>
-      </a>
-      </div>
-      <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="1500">
-      <a href="https://chat.openai.com/" target="_blank">
-      <div class="sponsers chat-gpt text-center px-3 py-3">
-      <img src="/assets/images/chatgpt.svg" class="img-fluid" alt="">
-      </div>
-      </a>
-      </div>
-      <div class="col-12 col-md-3" data-aos="fade-up" data-aos-duration="2000">
-      <a href="https://www.logoai.com/" target="_blank">
-      <div class="sponsers logo-ai text-center px-3 py-3">
-      <img src="/assets/images/logoai.svg" class="img-fluid" alt="">
-      </div>
-      </a>
-      </div>
-      <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="2500">
-      <a href="https://www.figma.com/" target="_blank">
-      <div class="sponsers figma text-center px-3 py-3">
-      <img src="/assets/images/figma.svg" class="img-fluid" alt="">
-      </div>
-      </a>
-      </div>
-      <div class="col-12 col-md-2" data-aos="fade-up" data-aos-duration="3000">
-      <a href="https://unsplash.com/" target="_blank">
-      <div class="sponsers unsplash text-center px-3 py-3">
-      <img src="/assets/images/unsplash.png" class="img-fluid" alt="">
-      </div>
-      </a>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!----------------------------------------- Sponsers Section Ended ---------------------------------->
-      <!--------------------------------------- Newsletter Section Started ---------------------------------->
-      <section class="bg-light-blue mb-5">
+   </section>
+   <!----------------------------------------- Sponsers Section Ended ---------------------------------->
+   <!--------------------------------------- Newsletter Section Started ---------------------------------->
+   <section class="bg-light-blue mb-5">
       <div class="container">
-      <div class="row">
-      <div class="col-12 col-md-6">
-      <h1 data-aos="fade-up">
-      Join Our <span class="generator-heading">Newsletter</span> & Get updated.
-      </h1>
+         <div class="row">
+            <div class="col-12 col-md-6">
+               <h1 data-aos="fade-up">
+                  Join Our <span class="generator-heading">Newsletter</span> & Get updated.
+               </h1>
+            </div>
+            <div class="col-12 col-md-6 mt-md-0 mt-3" data-aos="fade-up">
+               <div class="d-flex gap-1 justify-content-end justify-content-md-center">
+                  <div>
+                     <input type="text" placeholder="Enter your Email" class="form-control py-3" name="" id="">
+                  </div>
+                  <div>
+                     <button class="py-3 border-0 px-3 rounded rounded-3 btn-subscribe text-white ">
+                        Subscribe
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
-      <div class="col-12 col-md-6 mt-md-0 mt-3" data-aos="fade-up">
-      <div class="d-flex gap-1 justify-content-end justify-content-md-center">
-      <div>
-      <input type="text" placeholder="Enter your Email" class="form-control py-3" name="" id="">
-      </div>
-      <div>
-      <button class="py-3 border-0 px-3 rounded rounded-3 btn-subscribe text-white ">
-      Subscribe
-      </button>
-      </div>
-      </div>
-      </div>
-      </div>
-      </div>
-      </section>
-      <!---------------------------------------- Newsletter Section Ended ---------------------------------->
-      <!----------------------------------------- Footer Section Started ---------------------------------->
-      <section class="footer-section" id="contact">
+   </section>
+   <!---------------------------------------- Newsletter Section Ended ---------------------------------->
+   <!----------------------------------------- Footer Section Started ---------------------------------->
+   <section class="footer-section" id="contact">
       <footer>
-      <div class="container">
-      <div class="row my-2 gy-3">
-      <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
-      <a href="/" class="text-decoration-none">
-      <div class="d-flex align-items-center">
-      <div class="footer-logo">
-      <img src="/assets/images/logo-r.png" class="img-fluid" alt="">
-      </div>
-      <div>
-      <h2 class="pt-3 m-0 text-muted">SlideEase.</h2>
-      </div>
-      </div>
-      </a>
-      <p class="text-muted py-4 lh-lg">In this class, you will learn about the most effective machine learning
-      techniques, and gain practice implementing them.</p>
-      <div class="social-icons d-flex gap-3">
-      <a href="#">
-      <div class="social px-2 py-1 rounded rounded-3">
-      <i class='bx pt-1 bxl-facebook'></i>
-      </div>
-      </a>
-      <a href="#">
-      <div class="social px-2 py-1 rounded rounded-3">
-      <i class='bx pt-1 bxl-twitter'></i>
-      </div>
-      </a>
-      <a href="#">
-      <div class="social px-2 py-1 rounded rounded-3">
-      <i class='bx pt-1 bxl-instagram'></i>
-      </div>
-      </a>
-      </div>
-      </div>
-      <div class="col-12 col-md-8" data-aos="fade-up" data-aos-duration="2000">
-      <h2 class="text-center fw-bold">Get In Touch With Us</h2>
-      <form action="" class="my-4">
-      <div class="row">
-      <div class="col-12 col-md-6">
-      <div class="input-group mb-3">
-      <input type="text" class="form-control py-3" placeholder="Name" aria-label="Recipient's username"
-         aria-describedby="basic-addon2">
-      <span class="input-group-text" id="basic-addon2"><i class='bx bxs-user'></i></span>
-      </div>
-      <div class="input-group mb-3">
-      <input type="email" class="form-control py-3" placeholder="Email" aria-label="Recipient's username"
-         aria-describedby="basic-addon2">
-      <span class="input-group-text" id="basic-addon2"><i class='bx bxs-envelope'></i></span>
-      </div>
-      </div>
-      <div class="col-12 col-md-6">
-      <textarea name="" class="form-control w-100" id="" cols="30" rows="5"
-         placeholder="Message"></textarea>
-      </div>
-      <div class="d-flex justify-content-end">
-      <button type="button" class="btn btn-dark w-25 my-md-0 my-3">Send</button>
-      </div>
-      </div>
-      </div>
-      </form>
-      </div>
-      </div>
-      </div>
-      </div>
+         <div class="container">
+            <div class="row my-2 gy-3">
+               <div class="col-12 col-md-4" data-aos="fade-up" data-aos-duration="1000">
+                  <a href="/" class="text-decoration-none">
+                     <div class="d-flex align-items-center">
+                        <div class="footer-logo">
+                           <img src="/assets/images/logo-r.png" class="img-fluid" alt="">
+                        </div>
+                        <div>
+                           <h2 class="pt-3 m-0 text-muted">SlideEase.</h2>
+                        </div>
+                     </div>
+                  </a>
+                  <p class="text-muted py-4 lh-lg">In this class, you will learn about the most effective machine
+                     learning
+                     techniques, and gain practice implementing them.</p>
+                  <div class="social-icons d-flex gap-3">
+                     <a href="#">
+                        <div class="social px-2 py-1 rounded rounded-3">
+                           <i class='bx pt-1 bxl-facebook'></i>
+                        </div>
+                     </a>
+                     <a href="#">
+                        <div class="social px-2 py-1 rounded rounded-3">
+                           <i class='bx pt-1 bxl-twitter'></i>
+                        </div>
+                     </a>
+                     <a href="#">
+                        <div class="social px-2 py-1 rounded rounded-3">
+                           <i class='bx pt-1 bxl-instagram'></i>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+               <div class="col-12 col-md-8" data-aos="fade-up" data-aos-duration="2000">
+                  <h2 class="text-center fw-bold">Get In Touch With Us</h2>
+                  <form action="" class="my-4">
+                     <div class="row">
+                        <div class="col-12 col-md-6">
+                           <div class="input-group mb-3">
+                              <input type="text" class="form-control py-3" placeholder="Name"
+                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <span class="input-group-text" id="basic-addon2"><i class='bx bxs-user'></i></span>
+                           </div>
+                           <div class="input-group mb-3">
+                              <input type="email" class="form-control py-3" placeholder="Email"
+                                 aria-label="Recipient's username" aria-describedby="basic-addon2">
+                              <span class="input-group-text" id="basic-addon2"><i class='bx bxs-envelope'></i></span>
+                           </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                           <textarea name="" class="form-control w-100" id="" cols="30" rows="5"
+                              placeholder="Message"></textarea>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                           <button type="button" class="btn btn-dark w-25 my-md-0 my-3">Send</button>
+                        </div>
+                     </div>
+               </div>
+               </form>
+            </div>
+         </div>
+         </div>
+         </div>
       </footer>
-      </section>
-      <!------------------------------------------ Footer Section Ended ----------------------------------->
-      <!-------------------------------------------- Custom JavaScript ----------------------------------->
-      <script src="/assets/script/myScript.js"></script>
-      <!----------------------------------------- AOS Animation JavaScript ------------------------------->
-      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-      <script>
-         AOS.init({
-           offset: 110,
-           duration: 1000,
-         });
-      </script>
-      <!---------------- OWL Carousal JS -------------->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
-         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
-         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script>
-         $(".owl-carousel").owlCarousel({
-           loop: true,
-           margin: 10,
-           arrows: true,
-           nav: false,
-           dots: true,
-           autoplay: true,
-           autoplayTimeout: 2000,
-           stagePadding: 0,
-           responsive: {
-             0: {
+   </section>
+   <!------------------------------------------ Footer Section Ended ----------------------------------->
+   <!-------------------------------------------- Custom JavaScript ----------------------------------->
+   <script src="/assets/script/myScript.js"></script>
+   <!----------------------------------------- AOS Animation JavaScript ------------------------------->
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      AOS.init({
+         offset: 110,
+         duration: 1000,
+      });
+   </script>
+   <!---------------- OWL Carousal JS -------------->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>
+      $(".owl-carousel").owlCarousel({
+         loop: true,
+         margin: 10,
+         arrows: true,
+         nav: false,
+         dots: true,
+         autoplay: true,
+         autoplayTimeout: 2000,
+         stagePadding: 0,
+         responsive: {
+            0: {
                items: 1,
-             },
-             800: {
+            },
+            800: {
                items: 1,
-             },
-         
-             1000: {
+            },
+
+            1000: {
                items: 1,
-             },
-             1400: {
+            },
+            1400: {
                items: 1,
-             },
-           },
-         });
-      </script>
-      <!-- Optional JavaScript; choose one of the two! -->
-      <!-- Option 1: Bootstrap Bundle with Popper -->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-         crossorigin="anonymous"></script>
-      <!-- Option 2: Separate Popper and Bootstrap JS -->
-      <!--
+            },
+         },
+      });
+   </script>
+   <!-- Optional JavaScript; choose one of the two! -->
+   <!-- Option 1: Bootstrap Bundle with Popper -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+   <!-- Option 2: Separate Popper and Bootstrap JS -->
+   <!--
          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
          -->
-   </body>
+</body>
+
 </html>
