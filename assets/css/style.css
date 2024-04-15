@@ -14,8 +14,6 @@ body {
   width: 40px;
 }
 
-/* CSS Image Hover Effects: https://www.nxworld.net/tips/css-image-hover-effects.html */
-
 .gallery figure {
   margin-bottom: 5px;
 }
@@ -47,7 +45,7 @@ h1 {
 
 .hero {
   background-color: #f7fdff;
-  height: 110vh;
+  height: 630px;
   position: relative;
 }
 
@@ -91,56 +89,56 @@ h1 {
   color: #fff;
   border-radius: 5px;
   padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 500;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
-.btn-12{
+.btn-12 {
   position: relative;
   right: 25px;
   bottom: 20px;
-  border:none;
+  border: none;
   box-shadow: none;
   width: 145px;
   height: 40px;
   line-height: 42px;
   -webkit-perspective: 230px;
   perspective: 230px;
-} 
+}
 .btn-12 span {
-  background: rgb(153,80,255);
-background: linear-gradient(90deg, rgba(153,80,255,1) 30%, rgba(153,80,255,1) 30%, rgba(94,94,255,1) 100%);
+  background: rgb(153, 80, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(153, 80, 255, 1) 30%,
+    rgba(153, 80, 255, 1) 30%,
+    rgba(94, 94, 255, 1) 100%
+  );
   display: block;
   position: absolute;
   width: 145px;
   height: 40px;
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  margin:0;
+  margin: 0;
   text-align: center;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .btn-12 span:nth-child(1) {
-  box-shadow:
-   -7px -7px 20px 0px #fff9,
-   -4px -4px 5px 0px #fff9,
-   7px 7px 20px 0px #0002,
-   4px 4px 5px 0px #0001;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
   -webkit-transform: rotateX(90deg);
   -moz-transform: rotateX(90deg);
   transform: rotateX(90deg);
@@ -157,24 +155,20 @@ background: linear-gradient(90deg, rgba(153,80,255,1) 30%, rgba(153,80,255,1) 30
   transform-origin: 50% 50% -20px;
 }
 .btn-12:hover span:nth-child(1) {
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
   -webkit-transform: rotateX(0deg);
   -moz-transform: rotateX(0deg);
   transform: rotateX(0deg);
 }
 .btn-12:hover span:nth-child(2) {
-  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
- color: transparent;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  color: transparent;
   -webkit-transform: rotateX(-90deg);
   -moz-transform: rotateX(-90deg);
   transform: rotateX(-90deg);
 }
-
-
 
 .large-circle {
   position: absolute;
@@ -639,16 +633,27 @@ background: linear-gradient(90deg, rgba(153,80,255,1) 30%, rgba(153,80,255,1) 30
   border: 1px solid #fff !important;
 }
 
+.accordion-button:focus {
+  /* z-index: 3;
+  border-color: #ffffff;
+  outline: 0; */
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
+.form-control:focus {
+  
+  box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25);
+}
+
 /* // Medium devices (tablets, less than 992px) */
 @media (max-width: 991.98px) {
+  .hero {
+    height: 630px;
+  }
   .user-dropdown {
     display: none;
   }
-  .hero {
-    background-color: #f7fdff;
-    height: 60vh;
-    position: relative;
-  }
+
   .large-circle {
     height: 490px;
     width: 490px;
@@ -692,7 +697,7 @@ background: linear-gradient(90deg, rgba(153,80,255,1) 30%, rgba(153,80,255,1) 30
 /* // Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
   .hero {
-    height: 95vh;
+    height: 650px;
   }
 
   .user-dropdown {
